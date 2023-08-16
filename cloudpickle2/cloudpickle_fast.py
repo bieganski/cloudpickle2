@@ -26,7 +26,7 @@ from enum import Enum
 from collections import ChainMap, OrderedDict
 
 from .compat import pickle, Pickler
-from .cloudpickle import (
+from .cloudpickle2 import (
     _extract_code_globals, _BUILTIN_TYPE_NAMES, DEFAULT_PROTOCOL,
     _find_imported_submodules, _get_cell_contents, _should_pickle_by_reference,
     _builtin_type, _get_or_create_tracker_id,  _make_skeleton_class,

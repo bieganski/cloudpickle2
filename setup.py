@@ -12,7 +12,7 @@ except ImportError:
 # Function to parse __version__ in `cloudpickle/__init__.py`
 def find_version():
     here = os.path.abspath(os.path.dirname(__file__))
-    with open(os.path.join(here, 'cloudpickle', '__init__.py'), 'r') as fp:
+    with open(os.path.join(here, 'cloudpickle2', '__init__.py'), 'r') as fp:
         version_file = fp.read()
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
                               version_file, re.M)
@@ -22,14 +22,14 @@ def find_version():
 
 
 dist = setup(
-    name='cloudpickle',
+    name='cloudpickle2',
     version=find_version(),
     description='Extended pickling support for Python objects',
     author='Cloudpipe',
     author_email='cloudpipe@googlegroups.com',
     url='https://github.com/cloudpipe/cloudpickle',
     license='BSD-3-Clause',
-    packages=['cloudpickle'],
+    packages=['cloudpickle2'],
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     classifiers=[
